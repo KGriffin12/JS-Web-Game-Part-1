@@ -38,17 +38,6 @@ let heightOfGrass = horizon
 tile('assets/sky.png', 0, horizon, window.innerWidth/100, heightOfSky/100)
 tile('assets/grass.png', 0, 0, window.innerWidth/100, heightOfGrass/100)
 
-function newImage(url, left, bottom){
-    let object = document.createElement('img')
-    object.src = url
-    object.style.position = 'fixed'
-    object.style.left = left + 'px'
-    object.style.bottom = bottom + 'px'
-    document.body.append(object)
-    return object
-}
-
-
 function newItem(url, left, bottom){
     let object = newImage(url, left, bottom)
 
